@@ -20,10 +20,20 @@
   background-color: #231f20;
   overflow: hidden;
   background-image: url("./topography.svg");
+
+  font-family: "Courier New", Courier, monospace;
 }
 
 .appTitle {
   text-align: center;
   color: #efe6dd;
   margin: 0 1rem 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
