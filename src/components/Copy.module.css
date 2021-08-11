@@ -1,11 +1,12 @@
 .textWrapper {
   background-color: #efe6dd;
-  padding: 0 2rem 0 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   border-radius: 5px;
   position: relative;
   margin: 1rem;
   margin-top: -2rem;
 }
+
 .copyBtn {
   position: absolute;
   top: 0.25rem;
