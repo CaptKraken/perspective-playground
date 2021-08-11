@@ -15,8 +15,9 @@
   border: 0;
   border-radius: 3px;
   transition: all 0.25s;
-  background-color: #f3dfa2;
+  background-color: #ff435fed;
+  color: white;
 }
 .resetBtn:hover {
-  background: #d3bba3;
+  background: #c93249ed;
 }
