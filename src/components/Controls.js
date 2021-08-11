@@ -5,7 +5,7 @@ import cssStyle from "./Controls.module.css";
 
 const Controls = () => {
   const {
-    values: { perspective, rotateX, rotateY, rotateZ },
+    values: { perspective, rotateX, rotateY, rotateZ, darkmode },
     dispatch,
   } = useContext(ValueContext);
 
@@ -17,8 +17,10 @@ const Controls = () => {
     dispatch({ type: "reset" });
   };
 
+  const bgc = darkmode ? "#443e40" : "#efe6dd";
+
   return (
-    <div className={cssStyle.controls}>
+    <div style={{ backgroundColor: bgc }} className={cssStyle.controls}>
       <div style={{ zIndex: 99, width: "100%" }}>
         <Slider
           name="perspective"

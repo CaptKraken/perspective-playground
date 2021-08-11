@@ -1,0 +1,79 @@
+.switch {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.switch input {
+  display: none;
+}
+.switch .slider {
+  display: inline-block;
+  position: relative;
+  height: 32px;
+  width: 60px;
+  background-color: #ccc;
+}
+.switch .slider::after {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: rgb(255, 255, 255);
+  top: 3px;
+  left: 3px;
+  position: absolute;
+  transition: all 0.25s ease-in-out;
+}
+
+.switch.rounded .slider,
+.switch.rounded .slider::after {
+  border-radius: 100px;
+}
+
+.switch.stretch:active .slider::after {
+  width: 35px;
+}
+.switch.stretch:active input:checked + .slider::after {
+  width: 35px;
+  left: 20px;
+  transform: translateX(2px);
+}
+
+input:checked + .slider {
+  background-color: rgba(104, 225, 93, 0.708);
+}
+
+input:checked + .slider::after {
+  left: 31px;
+}
+
+/* NIGHT DAY MODE */
+.switch.switchDarkMode input:not(:checked) + .slider {
+  background-image: url("./day.svg");
+  background-size: 40%;
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-color: #87ceeb;
+}
+
+.switch.switchDarkMode input:not(:checked) + .slider::after {
+  background-color: #fadb44;
+}
+.switch.switchDarkMode input:checked + .slider::after {
+  background-color: #919ed2;
+}
+.switch.switchDarkMode input:checked + .slider {
+  background-image: url("./night.svg");
+  background-size: 45%;
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-color: #2a3444;
+}
+
+.switch.switchDarkMode.stretch:active .slider::after {
+  width: 29px;
+}
+.switch.switchDarkMode.stretch:active input:checked + .slider::after {
+  width: 29px;
+  left: 26px;
+}

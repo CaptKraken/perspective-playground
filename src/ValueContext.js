@@ -4,6 +4,18 @@ const ValueContext = createContext();
 
 export default ValueContext;
 
+const darkmode =
+  JSON.parse(localStorage.getItem("perspectivedarkmode")) ?? true;
+
+console.log(darkmode);
+const initState = {
+  perspective: 0,
+  rotateX: -180,
+  rotateY: -180,
+  rotateZ: -180,
+  darkmode,
+};
+
 const valuesReducer = (values, action) => {
   switch (action.type) {
     case "perspective":
@@ -15,18 +27,20 @@ const valuesReducer = (values, action) => {
     case "rotateZ":
       return { ...values, rotateZ: action.value };
     case "reset":
-      return initState;
+      return {
+        perspective: 0,
+        rotateX: -180,
+        rotateY: -180,
+        rotateZ: -180,
+        darkmode,
+      };
+    case "toggleDarkMode": {
+      return { ...values, darkmode: !values.darkmode };
+    }
 
     default:
       break;
   }
-};
-
-const initState = {
-  perspective: 0,
-  rotateX: -180,
-  rotateY: -180,
-  rotateZ: -180,
 };
 
 export const ValueContextProvider = ({ children }) => {

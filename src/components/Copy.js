@@ -4,7 +4,7 @@ import cssStyle from "./Copy.module.css";
 
 const Copy = () => {
   const {
-    values: { perspective, rotateX, rotateY, rotateZ },
+    values: { perspective, rotateX, rotateY, rotateZ, darkmode },
   } = useContext(ValueContext);
   const [copyText, setcopyText] = useState("");
   const textRef = useRef();
@@ -16,9 +16,11 @@ const Copy = () => {
     }, 2000);
   };
 
+  const bgc = darkmode ? "rgb(68, 62, 64)" : "#efe6dd";
+
   return (
     <>
-      <div className={cssStyle.textWrapper}>
+      <div style={{ backgroundColor: bgc }} className={cssStyle.textWrapper}>
         <p ref={textRef}>
           transform: perspective({perspective}px) rotateX({rotateX}deg) rotateY(
           {rotateY}deg) rotateZ({rotateZ}deg);
