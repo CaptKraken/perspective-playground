@@ -1,0 +1,29 @@
+.mainWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+  .mainWrapper {
+    flex-direction: column;
+  }
+}
+
+.appWrapper {
+  display: flex;
+  min-height: 100vh;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #231f20;
+  overflow: hidden;
+  background-image: url("./topography.svg");
+}
+
+.appTitle {
+  text-align: center;
+  color: #efe6dd;
+  margin: 0 1rem 0;
+}

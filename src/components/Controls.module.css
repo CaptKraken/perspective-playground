@@ -1,0 +1,22 @@
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #efe6dd;
+  margin: 1rem;
+  width: 90%;
+}
+.resetBtn {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+  transition: all 0.25s;
+  background-color: #f3dfa2;
+}
+.resetBtn:hover {
+  background: #d3bba3;
+}

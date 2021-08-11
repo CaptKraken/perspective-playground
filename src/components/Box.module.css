@@ -1,0 +1,14 @@
+.box {
+  min-height: 13.3125rem;
+  min-width: 13.3125rem;
+  padding: 1rem;
+  background-color: #bb4430;
+  background-image: url("../topography.svg");
+}
+
+@media only screen and (max-width: 300px) {
+  .box {
+    height: 10rem;
+    width: 10rem;
+  }
+}

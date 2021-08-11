@@ -1,0 +1,35 @@
+.textWrapper {
+  background-color: #efe6dd;
+  padding: 0 2rem 0 1rem;
+  border-radius: 5px;
+  position: relative;
+  margin: 1rem;
+  margin-top: -2rem;
+}
+.copyBtn {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ff435fed;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+.copyBtn:hover {
+  background-color: #f96279ed;
+}
+.copyText {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  font-weight: 700;
+  background-color: #f96279ed;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}

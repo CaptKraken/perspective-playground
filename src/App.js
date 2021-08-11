@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Box from "./components/Box";
+import { ValueContextProvider } from "./ValueContext";
+import Controls from "./components/Controls";
+import Copy from "./components/Copy";
+
+import cssStyle from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ValueContextProvider>
+      <div className={cssStyle.appWrapper}>
+        <h1 className={cssStyle.appTitle}>Perspective Playground</h1>
+        <div className={cssStyle.mainWrapper}>
+          <Box />
+          <Controls />
+        </div>
+        <Copy />
+      </div>
+    </ValueContextProvider>
   );
 }
 
