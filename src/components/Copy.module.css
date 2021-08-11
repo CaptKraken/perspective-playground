@@ -1,36 +1,36 @@
 .textWrapper {
   background-color: #efe6dd;
-  padding: 1rem 2rem 1rem 1rem;
   border-radius: 5px;
-  position: relative;
-  margin: 1rem;
   margin-top: -2rem;
+  margin: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
+  position: relative;
 }
 
 .copyBtn {
-  position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
-  padding: 5px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
   background-color: #ff435fed;
-  border: none;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
   transition: all 0.25s;
 }
 .copyBtn:hover {
   background-color: #f96279ed;
 }
 .copyText {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  background-color: #f96279ed;
+  border-radius: 5px;
   color: white;
   font-weight: 700;
-  background-color: #f96279ed;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
 }
