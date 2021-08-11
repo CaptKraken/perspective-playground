@@ -7,7 +7,6 @@ export default ValueContext;
 const darkmode =
   JSON.parse(localStorage.getItem("perspectivedarkmode")) ?? true;
 
-console.log(darkmode);
 const initState = {
   perspective: 0,
   rotateX: -180,
@@ -27,13 +26,7 @@ const valuesReducer = (values, action) => {
     case "rotateZ":
       return { ...values, rotateZ: action.value };
     case "reset":
-      return {
-        perspective: 0,
-        rotateX: -180,
-        rotateY: -180,
-        rotateZ: -180,
-        darkmode,
-      };
+      return initState;
     case "toggleDarkMode": {
       return { ...values, darkmode: !values.darkmode };
     }
