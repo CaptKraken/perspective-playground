@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 2rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -14,7 +15,7 @@
 .appWrapper {
   display: flex;
   min-height: 100vh;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -27,7 +28,7 @@
 
 .appTitle {
   text-align: center;
-  margin: 0 1rem 0;
+  margin: 1rem 1rem 0;
   padding: 1rem;
   border: 1px solid;
   border-radius: 5px;
