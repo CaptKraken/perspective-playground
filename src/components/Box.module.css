@@ -4,6 +4,7 @@
   padding: 1rem;
   background-color: #bb4430;
   background-image: url("../topography.svg");
+  border: 1px solid;
 }
 
 @media only screen and (max-width: 300px) {
